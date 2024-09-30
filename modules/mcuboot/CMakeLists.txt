@@ -368,6 +368,11 @@ if(CONFIG_BOOTLOADER_MCUBOOT)
     endif()
   endforeach()
 
+
+  separate_arguments(CONFIG_BOOT_SIGNATURE_KEY_FILE
+       UNIX_COMMAND ${CONFIG_BOOT_SIGNATURE_KEY_FILE}
+       )
+
   if(IS_ABSOLUTE ${CONFIG_BOOT_SIGNATURE_KEY_FILE})
     set(mcuboot_key_file ${CONFIG_BOOT_SIGNATURE_KEY_FILE})
   elseif (DEFINED mcuboot_CONF_DIR)
