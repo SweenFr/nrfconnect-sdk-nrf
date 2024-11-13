@@ -21,7 +21,7 @@ manifest:
     - name: ncs
       url-base: https://github.com/nrfconnect
     - name: sween
-      url-base: https://github.com/Sween
+      url-base: https://github.com/SweenFr
     # Third-party repository sources:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
